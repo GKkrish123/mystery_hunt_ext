@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "GKrish Puzzle Extension",
+    "version": "1.0",
+    "description": "Solve puzzles by revealing clues on websites using various tools.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
