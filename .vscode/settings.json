@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": true,
+    "css.lint.unknownAtRules": "ignore",
+    "gitConfigUser.selectedProfile": "GK"
+}
